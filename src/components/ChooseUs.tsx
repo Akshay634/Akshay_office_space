@@ -104,7 +104,7 @@ const WhyChooseUs = () => {
         {isMobile ? (
           <Grid container spacing={2}>
             {features.map((feature, idx) => (
-              <Grid item xs={6} key={feature.label}>
+              <Grid size={6} key={feature.label}>
                 <Paper
                   elevation={1}
                   sx={{

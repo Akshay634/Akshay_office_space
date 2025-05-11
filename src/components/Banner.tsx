@@ -95,14 +95,15 @@ const Banner = () => {
   };
   return (
     <Box sx={styles.bannerContainer}>
+    <Box sx={styles.bannerBg}>
       <Image
         src={banner}
         alt="BHIVE Workspace app"
-        className={styles.bannerBg}
         width={1600}
         height={400}
         priority
       />
+      </Box>
       <Box sx={styles.bannerContent}>
         <Box sx={styles.bannerText}>
           Host your meeting with world-class amenities. <br />

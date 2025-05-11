@@ -288,7 +288,7 @@ const SpaceOverview = () => {
         ) : (
           <Grid container spacing={3} justifyContent="center">
             {responceDataArr.map((space, idx) => (
-              <Grid item xs={12} sm={6} md={4} key={space.name + space.address}>
+              <Grid size={{ xs: 12, sm: 6, md: 4 }} key={space.name + space.address}>
                 {renderCard(space)}
               </Grid>
             ))}
