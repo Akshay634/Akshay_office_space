@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
+    "dev": "npm outdated & set NEXT_PRIVATE_LOCAL_WEBPACK=true && next dev --experimental-https --port 3002",
+    "build": "set NEXT_PRIVATE_LOCAL_WEBPACK=true && next build",
     "start": "next start",
     "lint": "next lint"
   },
